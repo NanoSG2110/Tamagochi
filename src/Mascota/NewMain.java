@@ -22,16 +22,12 @@ public class NewMain {
                     if(opcion==2){
                         int alimento = opcionesAlimento();
                         System.out.println("Alimentando...");
-                        System.out.println(mascota.alimentar(alimento));
+                        //System.out.println(mascota.alimentar(alimento));
                     }
                     if(opcion==3){
                         int ejercicio = opcionesEjercicio();
                         System.out.println("Ejercitando...");
-                        System.out.println(mascota.ejercitar(ejercicio));
-                    }
-                    if(opcion==4){
-                        System.out.println("Estudiar");
-                        System.out.println(mascota.estudiar());
+                        //System.out.println(Actividades.Jugar.
                     }
                 }while(opcion!=0 && opcion!=9 && mascota.estaViva());
                 System.out.println(mascota.getEstado());

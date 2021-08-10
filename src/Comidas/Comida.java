@@ -3,12 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Actividades;
+package Comidas;
 
 /**
  *
- * @author Tifanny Díaz Benítez
+ * @author luiss
  */
-public class Baño {
-    
+public class Comida {
+    private String nombre;
+    private int energia;
+    private int satisfaccion;
+    private int tiempoEspera;
+    private int aumentoBaño;
 }
