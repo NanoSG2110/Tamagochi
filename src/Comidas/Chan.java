@@ -11,4 +11,8 @@ package Comidas;
  */
 public class Chan extends Comida{
     
+    
+    public Chan() {
+        super("Chan", 20, 5, 4, 30);
+    }
 }

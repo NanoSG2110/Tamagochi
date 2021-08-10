@@ -4,64 +4,105 @@ public class Mascota {
     protected String nombre;
     protected boolean estado;
     protected boolean enfermedad;
-    protected int peso;
-    protected int aburrimiento;
-    protected int edadT;
+    protected int felicidad;
+    protected int edad;
     protected int necesidadesF;
     protected int satisfaccion;
     protected int energia;
 
     public Mascota(String nombre) { // valores iniciales
         this.nombre = nombre;
-        this.peso = 20;
-        this.aburrimiento = 20;
+        this.felicidad = 20;
         this.necesidadesF = 0;
         this.satisfaccion = 0;
     }
 
-    public boolean estaViva() {
-        if (this.peso > 100) {
-            return false;
-        }
-        if (this.peso < 0) {
-            return false;
-        }
-        if (this.getEdad() == 100) {
-            return false;
-        }
-        return true;
+    public String getNombre() {
+        return nombre;
     }
 
-    private int getEdad() {
-        int edad = this.edadT;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public boolean isEstado() {
+        return estado;
+    }
+
+    public void setEstado(boolean estado) {
+        this.estado = estado;
+    }
+
+    public boolean isEnfermedad() {
+        return enfermedad;
+    }
+
+    public void setEnfermedad(boolean enfermedad) {
+        this.enfermedad = enfermedad;
+    }
+    
+    public int getAburrimiento() {
+        return felicidad;
+    }
+
+    public void setAburrimiento(int felicidad) {
+        this.felicidad += felicidad;
+    }
+
+    public int getEdad() {
         return edad;
     }
-    
-    
-    
 
+    public void setEdad(int edad) {
+        this.edad += edad;
+    }
+
+    public int getNecesidadesF() {
+        return necesidadesF;
+    }
+
+    public void setNecesidadesF(int necesidadesF) {
+        this.necesidadesF += necesidadesF;
+    }
+
+    public int getSatisfaccion() {
+        return satisfaccion;
+    }
+
+    public void setSatisfaccion(int satisfaccion) {
+        this.satisfaccion += satisfaccion;
+    }
+
+    public int getEnergia() {
+        return energia;
+    }
+
+    public void setEnergia(int energia) {
+        this.energia += energia;
+    }
+    
     private String getEtapa() {
-        if (this.edadT <= 0) {
+        if (this.edad <= 0) {
             return "huevo";
         }
-        if (this.edadT <= 10) {
+        if (this.edad <= 10) {
             return "bebe";
         }
-        if (this.edadT <= 25) {
+        if (this.edad <= 25) {
             return "joven";
         }
-        if (this.edadT <= 50) {
+        if (this.edad <= 50) {
             return "adulto";
         }
         return "GOD";
     }
 
-    public String getEstado() {
+    /*public String getEstado() {
         if (!this.estaViva()) {
             return "D E A D";
         }
         return "Nombre:" + this.nombre + "\nPeso:" + this.peso + "\nEtapa:" + this.getEtapa() + "\nEdad:" + this.getEdad() + "\nAburrimiento:" + this.aburrimiento
                 + "\nnecesidad de cagar: " + this.necesidadesF + "\nNiveles de hambre:" + this.satisfaccion;
-    }
+    }*/
 
 }

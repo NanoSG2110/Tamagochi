@@ -10,9 +10,43 @@ package Comidas;
  * @author luiss
  */
 public class Comida {
-    private String nombre;
-    private int energia;
-    private int satisfaccion;
-    private int tiempoEspera;
-    private int aumentoBaño;
+    protected String nombre;
+    protected int aumentoEnergia;
+    protected int satisfaccion;
+    protected int aumentoBaño;
+    protected int tiempoEspera;
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getAumentoEnergia() {
+        return aumentoEnergia;
+    }
+
+    public int getSatisfaccion() {
+        return satisfaccion;
+    }
+
+    public int getAumentoBaño() {
+        return aumentoBaño;
+    }
+
+    public int getTiempoEspera() {
+        return tiempoEspera;
+    }
+
+
+    public Comida(String nombre, int aumentoEnergia, int satisfaccion, int aumentoBaño, int tiempoEspera) {
+        this.nombre = nombre;
+        this.aumentoEnergia = aumentoEnergia;
+        this.satisfaccion = satisfaccion;
+        this.aumentoBaño = aumentoBaño;
+        this.tiempoEspera = tiempoEspera;
+    }
+    
+    
+    
+    
+    
 }

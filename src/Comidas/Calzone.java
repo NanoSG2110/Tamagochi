@@ -10,5 +10,9 @@ package Comidas;
  * @author luiss
  */
 public class Calzone extends Comida{
-    
+
+   
+    public Calzone() {
+        super("Calzone", 5, 20, 15, 30);
+    }
 }

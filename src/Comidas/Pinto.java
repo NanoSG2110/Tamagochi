@@ -11,4 +11,8 @@ package Comidas;
  */
 public class Pinto extends Comida{
     
+    
+    public Pinto() {
+        super("Pinto", 7, 15, 12, 30);
+    }
 }
